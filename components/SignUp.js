@@ -154,7 +154,7 @@ const SignUp = () => {
             <div>
               <div className={errors.addressLine && touched.addressLine ? styles.unCompleted : !errors.addressLine && touched.addressLine ? styles.completed : undefined}>
                 <input type="text" name="addressLine" value={data.addressLine} placeholder="Address Line" onChange={changeHandler} onFocus={focusHandler} autoComplete="off" />
-                
+                 
               </div>
               {errors.addressLine && touched.addressLine && <span className={styles.error}>{errors.addressLine}</span>}
             </div>
