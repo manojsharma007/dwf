@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 //Icon
 // import userIcon from "../img/user.svg";
 // import emailIcon from "../img/email.svg";
-import passwordIcon from "../img/password.svg";
+
+//import passwordIcon from "../img/password.svg";
 // Validate
 import { validate } from "./validate";
 // Styles
@@ -206,14 +207,14 @@ const SignUp = () => {
             <div>
               <div className={errors.password && touched.password ? styles.unCompleted : !errors.password && touched.password ? styles.completed : undefined}>
                 <input type="password" name="password" value={data.password} placeholder="Password" onChange={changeHandler} onFocus={focusHandler} autoComplete="off" />
-                <img src={passwordIcon} alt="" />
+                {/* <img src={passwordIcon} alt="" /> */}
               </div>
               {errors.password && touched.password && <span className={styles.error}>{errors.password}</span>}
             </div>
             <div>
               <div className={errors.confirmPassword && touched.confirmPassword ? styles.unCompleted : !errors.confirmPassword && touched.confirmPassword ? styles.completed : undefined}>
                 <input type="password" name="confirmPassword" value={data.confirmPassword} placeholder="Confirm Password" onChange={changeHandler} onFocus={focusHandler} autoComplete="off" />
-                <img src={passwordIcon} alt="" />
+                {/* <img src={passwordIcon} alt="" /> */}
               </div>
               {errors.confirmPassword && touched.confirmPassword && <span className={styles.error}>{errors.confirmPassword}</span>}
             </div>

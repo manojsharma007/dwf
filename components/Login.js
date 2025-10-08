@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import emailIcon from "../img/email.svg";
-import passwordIcon from "../img/password.svg";
+//import emailIcon from "../img/email.svg";
+//import passwordIcon from "../img/password.svg";
 import styles from "./SignUp.module.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -54,13 +54,13 @@ const Login = () => {
         <div>
           <div>
             <input type="text" name="email" value={data.email} placeholder="E-mail" onChange={changeHandler} onFocus={focusHandler} autoComplete="off" />
-            <img src={emailIcon} alt="" />
+            {/* <img src={emailIcon} alt="" /> */}
           </div>
         </div>
         <div>
           <div>
             <input type="password" name="password" value={data.password} placeholder="Password" onChange={changeHandler} onFocus={focusHandler} autoComplete="off" />
-            <img src={passwordIcon} alt="" />
+            {/* <img src={passwordIcon} alt="" /> */}
           </div>
         </div>
 
